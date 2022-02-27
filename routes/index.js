@@ -53,7 +53,7 @@ router.post('/naf', async function(req, res, next) {
       // Call API Insee de l'intitulé de l'activité selon le code NAF envoyé depuis le front //
       const requete = request('GET', `https://api.insee.fr/metadonnees/V1/codes/nafr2/sousClasse/${naf}`, {
         headers: {
-          'Authorization': 'Bearer d412e087-82e1-3994-b856-e6addbaa7039',
+          'Authorization': process.env.API_BEARER,
           'Content-Type': 'application/x-www-form-urlencoded'
         },
         form: {
