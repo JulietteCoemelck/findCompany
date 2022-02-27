@@ -1,0 +1,19 @@
+
+.header {
+    margin-bottom: 60px;
+}
+.header img{
+    margin: 89px 0 29px 0;
+    height: 57px;
+    width: 216px;
+}
+
+.header h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+}

@@ -1,0 +1,40 @@
+.companyCard {
+    width: 271px;
+    height: 159px;
+    margin-bottom: 16px;
+    background: #FFFFFF;
+    border: 1px solid #ADADAD;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 28px 33px;
+    text-align: left;
+}
+
+.companyCard h2 {
+    width: 212px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    margin: 0;
+    text-transform: capitalize;
+    text-overflow: ellipsis; 
+    overflow: hidden;
+    white-space: nowrap;
+    
+}
+
+
+.companyCard p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+    margin: 14px 0px;
+}
