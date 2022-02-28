@@ -71,8 +71,6 @@
         width: 160px;
     }
     .searchResult {
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
+        grid-template-columns: 271px;
     }
 }
