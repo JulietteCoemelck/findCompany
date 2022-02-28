@@ -5,7 +5,7 @@ const nafrev2Model = require('../models/nafrev2');
 const naf1993Model = require ('../models/naf1993');
 const napModel = require('../models/nap');
 const router = express.Router();
-require('dotenv').config();
+//require('dotenv').config();
 
 // POST COMPANIES //
 router.post('/companies', function(req, res, next) {
@@ -14,7 +14,7 @@ router.post('/companies', function(req, res, next) {
   // Call API Insee de tous les établissements ayant le CP 33000 et contenant l'input du front dans leur nom //
   const requete = request('GET', `https://api.insee.fr/entreprises/sirene/V3/siret?q=codePostalEtablissement:33000 AND denominationUniteLegale:${input}&champs=etatAdministratifEtablissement, dateFin, dateCreationUniteLegale, dateDebut, siret, activitePrincipaleEtablissement, nomenclatureActivitePrincipaleEtablissement, denominationUniteLegale, complementAdresseEtablissement, numeroVoieEtablissement, indiceRepetitionEtablissement, typeVoieEtablissement, libelleVoieEtablissement&nombre=50`, {
     headers: {
-      'Authorization': 'Bearer d412e087-82e1-3994-b856-e6addbaa7039',
+      'Authorization': process.env.API_BEARER,
       'Cookie': 'INSEE=138986250.20480.0000; pdapimgateway=1830169354.22560.0000'
     }
   });
