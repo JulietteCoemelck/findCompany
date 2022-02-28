@@ -11,7 +11,7 @@ export default function HomePage(){
     // Requête au backend qui fait le call API //
     async function fetchData(input){
         const normalizedInput = input.normalize("NFD").replace(/[\u0300-\u036f]/g, ""); // suppression des accents
-        const response = await fetch('https://still-beach-61897.herokuapp.com/companies', {
+        const response = await fetch('/companies', {
             method: 'POST',
             headers: {'Content-Type':'application/x-www-form-urlencoded'},
             body: `input=${normalizedInput}`
