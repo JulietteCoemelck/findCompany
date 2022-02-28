@@ -7,17 +7,10 @@ const napModel = require('../models/nap');
 const router = express.Router();
 require('dotenv').config();
 
-
-
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
-
 // POST COMPANIES //
 router.post('/companies', function(req, res, next) {
+  console.log('route détectée')
   const input = req.body.input;
-  console.log('input back', input)
 
   // Call API Insee de tous les établissements ayant le CP 33000 et contenant l'input du front dans leur nom //
   const requete = request('GET', `https://api.insee.fr/entreprises/sirene/V3/siret?q=codePostalEtablissement:33000 AND denominationUniteLegale:${input}&champs=etatAdministratifEtablissement, dateFin, dateCreationUniteLegale, dateDebut, siret, activitePrincipaleEtablissement, nomenclatureActivitePrincipaleEtablissement, denominationUniteLegale, complementAdresseEtablissement, numeroVoieEtablissement, indiceRepetitionEtablissement, typeVoieEtablissement, libelleVoieEtablissement&nombre=50`, {
