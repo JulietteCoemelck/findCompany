@@ -21,7 +21,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "https://juco-findcompany.herokuapp.com",
+  "proxy": "http://juco-findcompany.herokuapp.com",
   "eslintConfig": {
     "extends": [
       "react-app",
