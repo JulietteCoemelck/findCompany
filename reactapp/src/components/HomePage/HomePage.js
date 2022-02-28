@@ -14,7 +14,7 @@ export default function HomePage(){
         const response = await fetch('/companies', {
             method: 'POST',
             headers: {'Content-Type':'application/x-www-form-urlencoded'},
-            body: `input=${normalizedInput}`
+            body: `input=${input}`
         });
         const jsonResponse = await response.json();
         setSearchResult(jsonResponse.companies);
