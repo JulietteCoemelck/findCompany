@@ -32,15 +32,15 @@ export default function CompanyDetails(props){
             </div>
 
             <div className='companyDetailsCircle' style={props.closed ? (companyDetailsBackgroundStyle.Close) : (companyDetailsBackgroundStyle.Open)}>
-                <div className='companyDetailsInfos'  style={props.closed ? ({height: '410px'}) : (null)}>
-                    <h3>{props.name}</h3>
+                <div className='companyDetailsInfos'>
+                    <h3 title={props.name.toUpperCase()}>{props.name}</h3>
                     <p>
                         <strong>Siret :</strong>
-                        <span>{props.siret}</span>
+                        <span title={props.siret}>{props.siret}</span>
                     </p>
                     <p>
                         <strong>Siège social :</strong>
-                        <span>{props.address}</span>
+                        <span title={props.address.toUpperCase()}>{props.address}</span>
                     </p>
                     <p>
                         <strong>Date de création :</strong> 
@@ -48,7 +48,7 @@ export default function CompanyDetails(props){
                     </p>
                     <p>
                         <strong>Activité :</strong>
-                        <span>{props.activity ? (props.activity) : ('NAF inconnu')}</span>
+                        <span>{props.activity ? (props.activity) : ('Activité inconnue')}</span>
                     </p>
                     <p>
                         <strong>NAF :</strong> 
