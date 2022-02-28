@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-require("dotenv").config();
+//require("dotenv").config();
 
 const BDD_LOGIN = process.env.BDD_LOGIN;
 const BDD_PASSWORD = process.env.BDD_PASSWORD;

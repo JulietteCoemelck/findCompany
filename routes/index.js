@@ -5,7 +5,7 @@ const nafrev2Model = require('../models/nafrev2');
 const naf1993Model = require ('../models/naf1993');
 const napModel = require('../models/nap');
 const router = express.Router();
-require('dotenv').config();
+//require('dotenv').config();
 
 // POST COMPANIES //
 router.post('/companies', function(req, res, next) {
