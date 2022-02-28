@@ -11,15 +11,17 @@ export default function HomePage(){
     // Requête au backend qui fait le call API //
     async function fetchData(input){
         const normalizedInput = input.normalize("NFD").replace(/[\u0300-\u036f]/g, ""); // suppression des accents
-       
-        const response = await fetch('/companies', {
-            method: 'POST',
-            headers: {'Content-Type':'application/x-www-form-urlencoded'},
-            body: `input=${normalizedInput}`
-        });
-        const jsonResponse = await response.json();
-        setSearchResult(jsonResponse.companies);
-    };
+        if(normalizedInput !== "'"){
+            const response = await fetch('/companies', {
+                method: 'POST',
+                headers: {'Content-Type':'application/x-www-form-urlencoded'},
+                body: `input=${normalizedInput}`
+            });
+            const jsonResponse = await response.json();
+            setSearchResult(jsonResponse.companies);
+        };
+    }
+        
 
     // Validation du formulaire avec la touche Entrée //
     const handleKeyPress = (e) => {

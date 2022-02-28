@@ -14,7 +14,7 @@
 
 .companyCard h2 {
     width: 212px;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -30,7 +30,7 @@
 
 
 .companyCard p {
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;

@@ -18,7 +18,7 @@
 }
 
 .searchBarInput {
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -37,7 +37,7 @@
 .resultsNumber {
     width: inherit;
     height: 32px;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
