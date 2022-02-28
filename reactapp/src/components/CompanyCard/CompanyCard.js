@@ -19,7 +19,7 @@ export default function CompanyCard(props){
 
     // Recherche back de l'intitulé NAF //
     async function searchNAFBack(naf, nafType){
-        const responseNAFBack = await fetch('/naf', {
+        const responseNAFBack = await fetch('https://still-beach-61897.herokuapp.com/naf', {
         method:'POST',
         headers: {'Content-Type':'application/x-www-form-urlencoded'},
         body:`naf=${naf}&nafType=${nafType}`
