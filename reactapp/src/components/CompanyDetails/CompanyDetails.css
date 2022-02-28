@@ -12,7 +12,7 @@
 
 .companyDetailsBackButton {
     width: 278px;
-    margin: 20px 0 0 0;
+    margin: 20px 0 27px 0;
     cursor: pointer;
 }
 
@@ -53,6 +53,12 @@
     }
 }
 
+.companyDetailsCircleContainer {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+}
+
 .companyDetailsCircle {
     width: 382px;
     height: 382px;
@@ -60,12 +66,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 40px 0 94px 0;
 }
 
-.companyDetailsInfos {
+#companyDetailsInfos {
     width: 278px;
-    height: fit-content;
+    min-height: 355.82px;
+    max-height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -76,20 +82,19 @@
     border-radius: 20px;
 }
 
-.companyDetailsInfos h3 {
+#companyDetailsInfos h3 {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 24px;
     line-height: 28px;
     color: #000000;
-    margin: 0 0 0 0;
+    margin: 0;
     text-align: left;
     text-transform: capitalize;
-
 }
 
-.companyDetailsInfos p{
+#companyDetailsInfos p{
     height: 41px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -103,7 +108,7 @@
     margin: 14px 0 0 0;
     }
 
-.companyDetailsInfos span {
+#companyDetailsInfos span {
     text-transform: capitalize;
     line-height: 14px;
 }

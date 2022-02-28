@@ -73,7 +73,7 @@ router.post('/naf', async function(req, res, next) {
    
     if(result.length !== 0){
       nafFromBack = result.intitule;
-    }
+    };
 
 
   } else if (nafType === 'NAF1993'){
@@ -83,7 +83,7 @@ router.post('/naf', async function(req, res, next) {
 
     if(result.length !==0){
       nafFromBack = result.intitule;
-    }
+    };
 
 
   } else if (nafType === 'NAP'){
@@ -93,8 +93,8 @@ router.post('/naf', async function(req, res, next) {
     
     if(result.length !==0){
       nafFromBack = result.intitule;
-    }
-  }
+    };
+  };
  
 	res.json({naf: nafFromBack});
 });
