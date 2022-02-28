@@ -14,7 +14,7 @@ router.post('/companies', function(req, res, next) {
   // Call API Insee de tous les établissements ayant le CP 33000 et contenant l'input du front dans leur nom //
   const requete = request('GET', `https://api.insee.fr/entreprises/sirene/V3/siret?q=codePostalEtablissement:33000 AND denominationUniteLegale:${input}&champs=etatAdministratifEtablissement, dateFin, dateCreationUniteLegale, dateDebut, siret, activitePrincipaleEtablissement, nomenclatureActivitePrincipaleEtablissement, denominationUniteLegale, complementAdresseEtablissement, numeroVoieEtablissement, indiceRepetitionEtablissement, typeVoieEtablissement, libelleVoieEtablissement&nombre=50`, {
     headers: {
-      'Authorization': process.env.API_BEARER,
+      'Authorization': `${process.env.API_BEARER}`,
       'Cookie': 'INSEE=138986250.20480.0000; pdapimgateway=1830169354.22560.0000'
     }
   });
