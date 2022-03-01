@@ -1,5 +1,6 @@
 # findCompany
-Application de recherche d'entreprises par **nom** et ayant pour **code postal 33000**
+Application de recherche d'entreprises par **nom** et ayant pour **code postal 33000**.
+> :arrow_right: Version déployée : https://juco-findcompany.herokuapp.com/
 
 ## :hammer_and_wrench: Technologies utilisées :
 - Front : React.js
